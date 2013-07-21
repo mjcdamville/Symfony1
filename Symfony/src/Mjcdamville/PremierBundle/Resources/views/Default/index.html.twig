@@ -1,0 +1,20 @@
+{% extends "MjcdamvillePremierBundle::base.html.twig" %}
+
+{% block content %}
+<h1>Taches</h1>
+{% if taches.count %}
+<table class="table table-hover">
+    <thead>
+        <tr><th>Description</th><th>Réalisée</th></tr>
+    </thead>
+    <tbody>
+    {% for tache in taches %}
+        <tr><td>{{tache.description}}</td><td>{{tache.realisee ? 'oui' : 'non'}}</td><td><a href="{{path('supprimer_tache',{'id': tache.id})}}" class="btn"><i class="icon-trash"></i> Supprimer</a></td></tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% else %}
+<p class="alert alert-warning">Aucune tâche pour l'instant</p>
+{% endif %}
+{% endblock %}

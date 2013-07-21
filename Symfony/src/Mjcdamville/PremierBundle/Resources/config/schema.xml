@@ -1,0 +1,7 @@
+<database name="propel" defaultIdMethod="native" namespace="Mjcdamville\PremierBundle\Model" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xsd.propelorm.org/1.6/database.xsd" >
+        <table name="taches">
+                <column name="id" type="INTEGER" primaryKey="true" autoIncrement="true" />
+                <column name="description" type="VARCHAR" size="45" required="true"  /> 
+                <column name="realisee" type="BOOLEAN" required="true" defaultValue="false" />
+        </table>
+</database>

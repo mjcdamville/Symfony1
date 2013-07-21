@@ -1,0 +1,9 @@
+<?php
+
+namespace Mjcdamville\PremierBundle\Model;
+
+use Mjcdamville\PremierBundle\Model\om\BaseTache;
+
+class Tache extends BaseTache
+{
+}

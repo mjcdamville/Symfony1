@@ -1,0 +1,5 @@
+mjcdamville_premier:
+    resource: "@MjcdamvillePremierBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
